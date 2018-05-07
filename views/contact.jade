@@ -1,0 +1,89 @@
+extends layout
+
+block content
+    #page
+      .page-inner
+        #head-top(style="position: absolute; width: 100%; top: 0; ")
+          .gtco-top
+            .container-fluid(style="background-color:#4D4D4D;")
+              .row
+                .col-md-6.col-xs-6
+                .col-md-6.col-xs-6.social-icons
+                  ul#lang.gtco-social-top
+                    li
+                      a(href="english version/index.html")
+                        i
+                          img(src="images/USA_30px.png" alt="En")
+          nav#catch.gtco-nav.sticky-banner(role="navigation")
+            .gtco-container
+              #nav.row
+                .col-xs-12.text-center.menu-1
+                  span.go-back
+                    a(href="/")
+                      .logo(style="background-image: url(/images/logo.png)")
+                  ul
+                    li
+                      a(href="/") Accueil
+                    li.has-dropdown
+                      a(href="/services") Services
+                      ul.dropdown
+                        li
+                          a(href="/services#fox-1") Conseille et Orientation Scolaire
+                        li
+                          a(href="/services#fox-2") Traduction Document
+                        li
+                          a(href="/services#fox-3") Hebergement
+                        li
+                          a(href="/services#fox-4") Etablissement de Visa
+                    li
+                      a(href="/about") Qui somme nous
+                    li
+                      a(href="/partner") Partenaires
+                    li.active
+                      a(href="/contact") Contactez Nous
+        header#gtco-header.gtco-cover.gtco-cover-sm(role="banner" style="background-image: url(images/background-2.jpg)" data-stellar-background-ratio="0.5")
+          .overlay
+          .gtco-container
+            .row.row-mt-15em
+              .col-md-7.mt-text.text-left.animate-box(data-animate-effect="fadeInUp")
+                h1
+                  | Restez 
+                  strong en Contact
+                h2 Le meilleur moyen pour mieux vous servir
+        .gtco-section.gtco-gray-bg
+          .gtco-container
+            .row
+              .col-md-12
+                .col-md-6.animate-box
+                  h3 Contact
+                  form(action="#")
+                    .row.form-group
+                      .col-md-12
+                        label.sr-only(for="name") Nom
+                        input#name.form-control(type="text" name="name" placeholder="Votre nom")
+                    .row.form-group
+                      .col-md-12
+                        label.sr-only(for="email") Email
+                        input#email.form-control(type="text" name="email" placeholder="Votre email")
+                    .row.form-group
+                      .col-md-12
+                        label.sr-only(for="subject") Sujet
+                        input#subject.form-control(type="text" name="sujet" placeholder="Votre sujet")
+                    .row.form-group
+                      .col-md-12
+                        label.sr-only(for="message") Message
+                        textarea#message.form-control(name="message" cols="30" rows="10" placeholder="Votre message")
+                    .form-group
+                      input.btn.btn-primary(type="submit" value="Envoyer")
+                .col-md-5.col-md-push-1.animate-box
+                  .gtco-contact-info
+                    h3 Contact Information
+                    ul
+                      li.address
+                        | 54/47 Abeka Road, 
+                        br
+                        |  Accra Ghana.
+                      li.phone +233 561 336 366
+                      li.email ghanaccess@gmail.com
+                      li.email contact@ghana-access.com
+        footer

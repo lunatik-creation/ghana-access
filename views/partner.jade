@@ -1,0 +1,294 @@
+extends layout
+
+block content
+		#page
+			.page-inner
+				#head-top(style="position: absolute; width: 100%; top: 0; ")
+					.gtco-top
+						.container-fluid(style="background-color:#4D4D4D;")
+							.row
+								.col-md-6.col-xs-6
+								.col-md-6.col-xs-6.social-icons
+									ul#lang.gtco-social-top
+										li
+											a(href="english version/index.html")
+												i
+													img(src="images/USA_30px.png" alt="En")
+					nav#catch.gtco-nav.sticky-banner(role="navigation")
+						.gtco-container
+							#nav.row
+								.col-xs-12.text-center.menu-1
+									span.go-back
+										a(href="/")
+											.logo(style="background-image: url(images/logo.png)")
+									ul
+										li(class=(title==='Accueil'?'active':''))
+											a(href="/") Accueil
+										li.has-dropdown(class=(title==='Services'?'active':''))
+											a(href="/services") Services
+											ul.dropdown
+												li
+													a(href="/services#fox-1") Conseille et Orientation Scolaire
+												li
+													a(href="/services#fox-2") Traduction Document
+												li
+													a(href="/services#fox-3") Hebergement
+												li
+													a(href="/services#fox-4") Etablissement de Visa
+										li(class=(title==='A propos'?'active':''))
+											a(href="/about") Qui somme nous
+										li(class=(title==='Partenaires'?'active':''))
+											a(href="/partner") Partenaires
+										li(class=(title==='Contact'?'active':''))
+											a(href="/contact") Contactez Nous
+				header#gtco-header.gtco-cover.gtco-cover-sm(role="banner" style="background-image: url(images/servicio_1_big.jpg)" data-stellar-background-ratio="0.5")
+					.overlay
+					.gtco-container
+						.row.row-mt-15em
+							.col-md-7.mt-text.text-left.animate-box(data-animate-effect="fadeInUp")
+								h1
+									| Nos 
+									strong partenaires
+								h2 Ceux sans qui nous ne pouriont exister
+				.gtco-section.gtco-gray-bg
+					.gtco-container
+						.row
+							.col-lg-4.col-md-4.col-sm-6
+								a.gtco-card-item(href="/form")
+									figure
+										img.img-responsive(src="images/7.png" alt="Image")
+									.gtco-text.text-left
+										h2 C.E.L.P.S
+										p
+											b Description: 
+											|  Centre Of Languages & Professional Studies est une ecoles de langues � Accra 
+											br
+											b Adresse :  
+											|  Alajo Accra Trotro Station.
+							.col-lg-4.col-md-4.col-sm-6
+								a.gtco-card-item(href="/form")
+									figure
+										img.img-responsive(src="images/Alliance-Francaise-Jobs-in-Ghana.jpg" alt="Image")
+									.gtco-text.text-left
+										h2 Alliance Francaise
+										p
+											b Description: 
+											|  Alliance Fran�aise d'Accra est une ecoles de langues � Accra 
+											br
+											br
+											b  Adresse :  
+											|  Casely Hayford Rd, Accra.
+							.clearfix.visible-sm-block
+							.col-lg-4.col-md-4.col-sm-6
+								a.gtco-card-item(href="/form")
+									figure
+										img.img-responsive(src="images/4.png" alt="Image")
+									.gtco-text.text-left
+										h2 E.L.A
+										p
+											b Description: 
+											|  Excellence Language Academy est une ecoles de langues � Accra 
+											br
+											b  Adresse :  
+											|  Alajo Accra Trotro Station.
+							.clearfix.visible-lg-block.visible-md-block
+							.col-lg-4.col-md-4.col-sm-6
+								a.gtco-card-item(href="/form")
+									figure
+										img.img-responsive(src="images/5.png" alt="Image")
+									.gtco-text.text-left
+										h2 PINACLE
+										p
+											b Description: 
+											|  Pinnacle College est une ecoles de langues � Accra 
+											br
+											br
+											b  Adresse : 
+											|  Akweteyman.
+							.clearfix.visible-sm-block
+							.col-lg-4.col-md-4.col-sm-6
+								a.gtco-card-item(href="/form")
+									figure
+										img.img-responsive(src="images/8.png" alt="Image")
+									.gtco-text.text-left
+										h2 EAGLE VISION
+										p
+											b Description: 
+											|  Eagle Vision Institute est une ecole de langues � Accra 
+											br
+											br
+											b Adresse :  
+											|  Alajo Accra Trotro Station.
+							.col-lg-4.col-md-4.col-sm-6
+								a.gtco-card-item(href="/form")
+									figure
+										img.img-responsive(src="images/13.png" alt="Image")
+									.gtco-text.text-left
+										h2 A.S.L.B
+										p
+											b Description: 
+											|  Ace School of Languages and Business  est une ecole de langues � Accra 
+											br
+											b Adresse :  
+											|  Nii Okaiman W Rd, Lapaz.
+							.clearfix.visible-lg-block.visible-md-block
+							.col-lg-4.col-md-4.col-sm-6
+								a.gtco-card-item(href="/form")
+									figure
+										img.img-responsive(src="images/3.png" alt="Image")
+									.gtco-text.text-left
+										h2 A.I.T
+										p
+											b Description: 
+											| Accra Institute of Technology  est une Universit� 
+											br
+											b Adresse :  
+											|  Cantonments Rd, Accra.
+							.col-lg-4.col-md-4.col-sm-6
+								a.gtco-card-item(href="/form")
+									figure
+										img.img-responsive(src="images/1.png" alt="Image")
+									.gtco-text.text-left
+										h2 G.T.U.C
+										p
+											b Description: 
+											| Ghana Telecom University College est une Universit� Public � Accra 
+											br
+											b Adresse :  
+											|  North Industrial Area, Accra.
+							.clearfix.visible-sm-block
+							.col-lg-4.col-md-4.col-sm-6
+								a.gtco-card-item(href="/form")
+									figure
+										img.img-responsive(src="images/6.png" alt="Image")
+									.gtco-text.text-left
+										h2 L.E.G.O.N
+										p
+											b Description: 
+											| Universit� of Ghana est une Universit� Public � Accra
+											br
+											b Adresse :  
+											|  Legon Boundary, Accra.
+							.clearfix.visible-lg-block.visible-md-block
+							.col-lg-4.col-md-4.col-sm-6
+								a.gtco-card-item(href="/form")
+									figure
+										img.img-responsive(src="images/9.png" alt="Image")
+									.gtco-text.text-left
+										h2 WISCONSIN
+										p
+											b Description: 
+											|  Wisconsin International University College  est une Universit� priv� � Accra
+											br
+											b Adresse :  
+											|  113 Agbogba - Ashongman Rd.
+							.clearfix.visible-sm-block
+							.col-lg-4.col-md-4.col-sm-6
+								a.gtco-card-item(href="/form")
+									figure
+										img.img-responsive(src="images/2.png" alt="Image")
+									.gtco-text.text-left
+										h2 G.I.M.P.A
+										p
+											b Description: 
+											|  Ghana Institute of Management and Public Administrations est une Universit� priv� � Accra 
+											br
+											b Adresse :  
+											|  Greenhill, Accra.
+							.col-lg-4.col-md-4.col-sm-6
+								a.gtco-card-item(href="/form")
+									figure
+										img.img-responsive(src="images/12.png" alt="Image")
+									.gtco-text.text-left
+										h2 RUCST
+										p
+											b Description: 
+											|  Regent University College of Science and Technology  est une Universit� priv� � Accra
+											br
+											b Adresse :  
+											|  Jonkobri Rd, Accra.
+							.clearfix.visible-lg-block.visible-md-block
+							.col-lg-4.col-md-4.col-sm-6
+								a.gtco-card-item(href="/form")
+									figure
+										img.img-responsive(src="images/10.png" alt="Image")
+									.gtco-text.text-left
+										h2 BANI HOSTEL
+										p
+											b Description: 
+											|  BANI HOSTEL est un hostel pour etudiant � Accra
+											br
+											b Adresse :  
+											|  Alajo Accra Trotro Station.
+							.clearfix.visible-sm-block
+							.col-lg-4.col-md-4.col-sm-6
+								a.gtco-card-item(href="/form")
+									figure
+										img.img-responsive(src="images/paint.png" alt="Image")
+									.gtco-text.text-left
+										h2 PAINT HOSTEL
+										p
+											b Description: 
+											|  PAINT HOSTEL est un hostel pour etudiant � Accra
+											br
+											b Adresse :  
+											|  Alajo Accra Trotro Station.
+							.col-lg-4.col-md-4.col-sm-6
+								a.gtco-card-item(href="/form")
+									figure
+										img.img-responsive(src="images/akwbig.png" alt="Image")
+									.gtco-text.text-left
+										h2 AKTWEMAN BIG HOSTEL
+										p
+											b Description: 
+											|  AKTWEMAN BIG HOSTEL est un hostel pour etudiant � Accra
+											br
+											b Adresse :  
+											|  Alajo Accra Trotro Station.
+							.clearfix.visible-lg-block.visible-md-block
+							.col-lg-4.col-md-4.col-sm-6
+								a.gtco-card-item(href="/form")
+									figure
+										img.img-responsive(src="images/brown.png" alt="Image")
+									.gtco-text.text-left
+										h2 AKTWEMAN SMALL HOSTEL
+										p
+											b Description: 
+											|  AKTWEMAN SMALL HOSTEL est un hostel pour etudiant � Accra
+											br
+											br
+											b Adresse :  
+											|  Alajo Accra Trotro Station.
+							.clearfix.visible-sm-block
+							.col-lg-4.col-md-4.col-sm-6
+								a.gtco-card-item(href="/form")
+									figure
+										img.img-responsive(src="images/11.png" alt="Image")
+									.gtco-text.text-left
+										h2 C.E.L.P.S HOSTEL
+										p
+											b Description: 
+											|  Centre Of Languages & Professional Studies HOSTEL est un hostel pour etudiant � Accra
+											br
+											b Adresse :  
+											|  Alajo Accra Trotro Station.
+							.col-lg-4.col-md-4.col-sm-6
+								a.gtco-card-item(href="/form")
+									figure
+										img.img-responsive(src="images/ela.png" alt="Image")
+									.gtco-text.text-left
+										h2 E.L.A HOSTEL
+										p
+											b Description: 
+											|  Excellence Language Academy HOSTEL est un hostel pour etudiant � Accra
+											br
+											b Adresse :  
+											|  Alajo Accra Trotro Station.
+							.clearfix.visible-lg-block.visible-md-block
+				.gtco-cover.gtco-cover-sm(style="background-image: url(images/StudentsSitting.jpg)" data-stellar-background-ratio="0.5")
+					.overlay
+					.gtco-container.text-center
+						.display-t
+							.display-tc
+								h1 Nous vous offrons la creme de la creme en matiere d'instituit scolaire � Accra
+				footer

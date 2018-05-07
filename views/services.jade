@@ -1,0 +1,108 @@
+extends layout
+
+block content
+		#page
+			.page-inner
+				#head-top(style="position: absolute; width: 100%; top: 0; ")
+					.gtco-top
+						.container-fluid(style="background-color:#4D4D4D;")
+							.row
+								.col-md-6.col-xs-6
+								.col-md-6.col-xs-6.social-icons
+									ul#lang.gtco-social-top
+										li
+											a(href="english version/index.html")
+												i
+													img(src="images/USA_30px.png" alt="En")
+					nav#catch.gtco-nav.sticky-banner(role="navigation")
+						.gtco-container
+							#nav.row
+								.col-xs-12.text-center.menu-1
+									span.go-back
+										a(href="/")
+											.logo(style="background-image: url(images/logo.png)")
+									ul
+										li(class=(title==='Accueil'?'active':''))
+											a(href="/") Accueil
+										li.has-dropdown.active(class=(title==='Services'?'active':''))
+											a(href="/services") Services
+											ul.dropdown
+												li
+													a(href="/services#fox-1") Conseille et Orientation Scolaire
+												li
+													a(href="/services#fox-2") Traduction Document
+												li
+													a(href="/services#fox-3") Hebergement
+												li
+													a(href="/services#fox-4") Etablissement de Visa
+										li(class=(title==='A propos'?'active':''))
+											a(href="/about") Qui somme nous
+										li(class=(title==='Partenaires'?'active':''))
+											a(href="/partner") Partenaires
+										li(class=(title==='Contact'?'active':''))
+											a(href="/contact") Contactez Nous
+				header#gtco-header.gtco-cover.gtco-cover-sm(role="banner" style="background-image: url(images/3_SAa.png)" data-stellar-background-ratio="0.5")
+					.overlay
+					.gtco-container
+						.row.row-mt-15em
+							.col-md-7.mt-text.text-left.animate-box(data-animate-effect="fadeInUp")
+								h1
+									| Nos 
+									strong Services
+								h2 Nous avons tous pour vous plaire, car votre comfort est notre preocupation.
+				#fox-1.flex-section.gtco-gray-bg
+					.col-1
+						.text
+							.row.row-pb-sm
+								.col-md-12
+									h2 Conseille et Orientation Scolaire
+									p
+										| Ce paquet est un paquet gratuit Ghana-Access; c'est le plus important de tous les services que nous offrons et nous concentrons une grande partie de nos efforts de recherche � ce sujet; faire ressortir des informations exceptionnelles, fiables et de bonne qualit�. Nous faisons des demandes pour vous sans frais et vous offrons des conseils et des conseils sur vos exp�riences stimulantes. Nous vous avertissons des r�solutions possibles l�gales, vous aidons � affiner les possibilit�s ou les options, � tester diff�rentes possibilit�s ou options et � prendre la meilleure d�cision ensemble. Lorsque plusieurs esprits sont combin�s dans le m�me but, les id�es sont fusionn�es pour r�duire le risque d'�chec lors de la prise de d�cision. Un comit� de citoyens ghan�ens et non-ghan�ens exp�riment�s travaille avec vous pour vous fournir les meilleurs conseils possibles. Ce package a �t� mis en place car nous savons � quel point il est important d'obtenir des informations fiables et de qualit� constante.
+									p
+										| L'information est la variable principale dans la prise de d�cision. On ne peut prendre de d�cision que sur la base des informations dont il dispose. Par cons�quent, si l'information que l'on poss�de n'est pas assez pertinente pour une prise de d�cision particuli�re, on prend toujours de mauvaises d�cisions. Un exemple de sc�nario pourrait �tre: �Si je savais que je pourrais prendre des informations fiables sur la plateforme d'acc�s au Ghana, je ne ferais pas un voyage sp�cial au Ghana juste pour collecter des informations et retourner dans mon pays pour prendre ma d�cision. co�te un individu X, un voyage �quitable et selon le pays celui dans le sc�nario vient de d�penses serait beaucoup beaucoup pour se retrouver avec l'information que l'on n'est pas pr�t � rester au Ghana. Il y a de nombreux cas dans lesquels le capital peut �tre aussi vital et c'est pourquoi nous, Ghana Access, avons fait de notre souci de fournir une information exceptionnelle, fiable, fiable et l�gale.
+					.col-2.flex-img(style="background-image: url(images/img_bg_1.jpg); ")
+				#fox-2.flex-section.reverse
+					.col-1
+						.text
+							.row.row-pb-sm
+								.col-md-12
+									h2 Traduction de Document
+									p
+										| La traduction du document devient vraiment critique quand on a des certifications d'un pays francophone ou d'un pays hispanophone en ce qui concerne l'Afrique. Pris en dehors du continent africain, il pourrait y avoir beaucoup d'autres certificats l�gaux dans des langues autres que l'anglais et c'est un gros probl�me si l'on a l'intention de travailler ou d'�tudier ici au Ghana. Il est ensuite demand� � chaque partie prenante de traduire son document. La fa�on de s'y prendre pourrait �tre un probl�me, mais avec nous, ce service sera fait par les institutions juridiques. Nous aidons les parties prenantes � faire traduire leurs certifications et tout autre document personnalis�. Cela pourrait �tre consid�r� comme trivial mais peut se transformer en une vraie affaire quand elle n'est pas faite par une institution reconnue par l'�tat.
+					.col-2.flex-img(style="background-image: url(images/Image1.png);")
+				#fox-3.flex-section.gtco-gray-bg
+					.col-1
+						.text
+							.row.row-pb-sm
+								.col-md-12
+									h2 Hebergement
+									p
+										| Ici, Ghana Access, en collaboration avec ses affili�s, a mis � disposition quelques auberges, h�tels, chambres d'h�tes et maisons pour loger ses clients. Pour des raisons de s�curit� et de confort, nous offrons des services d'h�bergement en option � nos clients.
+									p
+										| Disclaim: Il est important de savoir que Ghana Access ne poss�de pas de l'entreprise d'h�bergement mentionn� plus t�t, cependant, a pr�-n�goci� avec ses soci�t�s affili�es et reconna�t ces tarifs comme tarifs officiels ne peut donc �tre utilis� sans nos services.
+					.col-2.flex-img(style="background-image: url(images/student-accommodation.jpg);")
+				#fox-4.flex-section.reverse
+					.col-1
+						.text
+							.row.row-pb-sm
+								.col-md-12
+									h2 Etablissement de Visa
+									p
+										| Commun�ment appel� permis de s�jour, il s'agit d'un paquet que nous offrons, car il est exig� du service d'immigration du Ghana de poss�der un permis de r�sidence quand on reste sur le territoire du Ghana apr�s la p�riode de trois mois accord�e par le service d'immigration du Ghana. ton passeport. Apr�s cette p�riode, on est exhort� � obtenir un permis de r�sidence, sinon il est consid�r� comme un d�lit et punissable. Veuillez nous �crire pour avoir plus d'informations sur le permis de s�jour. Une autre chose � consid�rer ici est le permis de travail qui est requis pour travailler au Ghana. Mais, bien s�r, contactez-nous pour plus d'informations.
+					.col-2.flex-img(style="background-image: url(images/ghana-residence-permit-01.jpg);")
+				#fox-5.flex-section.gtco-gray-bg
+					.col-1
+						.text
+							.row.row-pb-sm
+								.col-md-12
+									h2 Location de vehicules
+									p
+										| Tout comme l'aspect de l'h�bergement, la location de voiture est un paquet suppl�mentaire que nous avons soigneusement examin� et mis � disposition pour assurer la s�curit� et la s�ret� de nos clients au Ghana. Les entreprises et les entreprises travaillant dans l'affiliation avec Ghana Access sont de confiance et ont des politiques fortes qui sont primordiales pour la s�curit� et le bien-�tre de leurs clients.
+					.col-2.flex-img(style="background-image: url(images/mediatelecom_uber_mt020218.jpg);")
+				.gtco-cover.gtco-cover-sm(style="background-image: url(images/rfrf.jpg)" data-stellar-background-ratio="0.5")
+					.overlay
+					.gtco-container.text-center
+						.display-t
+							.display-tc
+								h1 L'information est la variable principale dans la prise de d�cision!
+				footer
