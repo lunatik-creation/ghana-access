@@ -22,7 +22,7 @@ router.post('/send', function(req, res, next) {
     from: 'Ghana Access  <ghanaccess@gmail.com>',
     to: 'facialucien@gmail.com',
     subject: 'Contactez Nous',
-    text: 'Vous avez recu un nouveau formulaire provenant de Ghana avec les detail suivants...Nom:' +
+    text: 'Vous avez recu un nouveau contact formulaire provenant de Ghana avec les detail suivants...Nom:' +
       req.body.name + 'Email: ' + req.body.email + 'Sujet: '+ req.body.sujet +' Message: ' + req.body
       .message,
     html: '<p>Vous avez recu un nouveau formulaire provenant de Ghana</p><ul><li>Name: ' +

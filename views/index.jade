@@ -1,225 +1,239 @@
 extends layout
 
 block content
-  .gtco-loader
-  #page
-    .page-inner
-      #head-top(style="position: absolute; width: 100%; top: 0; ")
-        .gtco-top
-          .container-fluid(style="background-color:#4D4D4D;")
-            .row
-              .col-md-6.col-xs-6
-              .col-md-6.col-xs-6.social-icons
-                ul#lang.gtco-social-top
-                  li
-                    a(href="en/index")
-                      i
-                        img(src="/images/USA_30px.png" alt="En")
-        nav#catch.gtco-nav.sticky-banner(role="navigation")
+    .gtco-loader
+    #page
+      .page-inner
+        #head-top(style='position: absolute; width: 100%; top: 0; ')
+          .gtco-top
+            .container-fluid(style='background-color:#4D4D4D;')
+              .row
+                .col-md-6.col-xs-6
+                .col-md-6.col-xs-6.social-icons
+                  ul#lang.gtco-social-top
+                    li
+                      span#redirect-partner
+                        a(href='/form')  S'incrire pour un service 
+                    li
+                      a(href='en/')
+                        i
+                          img(src='images/USA_30px.png', alt='')
+          nav#catch.gtco-nav.sticky-banner(role='navigation')
+            .gtco-container
+              #nav.row
+                .col-xs-12.text-center.menu-1
+                  span.go-back
+                    a(href='/')
+                      .logo
+                        img(src='images/logo.png', alt='Ghana Access', width='100%', height='100%')
+                  ul
+                    li(class=(title==='Accueil'?'active':''))
+                      a(href='/') Accueil
+                    li.has-dropdown(class=(title==='Service'?'active':''))
+                      a(href='/services') Services
+                      ul.dropdown
+                        li
+                          a(href='/services#fox-1') Conseils et Orientations Scolaires
+                        li
+                          a(href='/services#fox-2') Traduction Documents
+                        li
+                          a(href='/services#fox-3') Hébergement
+                        li
+                          a(href='/services#fox-4') Etablissement de Visa
+                    li(class=(title==='A propos'?'active':''))
+                      a(href='/about') Qui somme nous
+                    li(class=(title==='Partenaires'?'active':''))
+                      a(href='/partner') Partenaires
+                    li(class=(title==='Contact'?'active':''))
+                      a(href='/contact') Contactez Nous
+        header#gtco-header.gtco-cover.gtco-cover-md(role='banner', style='background-image: url(images/Accra-Airport-City.jpg)', data-stellar-background-ratio='0.5')
+          .overlay
           .gtco-container
-            #nav.row
-              .col-xs-12.text-center.menu-1
-                span.go-back
-                  a(href="/")
-                    .logo(style="background-image: url(/images/logo.png)")
-                ul
-                  li(class=(title==='Accueil'?'active':''))
-                    a(href="/") Accueil
-                  li.has-dropdown(class=(title==='Services'?'active':''))
-                    a(href="/services") Services
-                    ul.dropdown
-                      li
-                        a(href="/services#fox-1") Conseille et Orientation Scolaire
-                      li
-                        a(href="/services#fox-2") Traduction Document
-                      li
-                        a(href="/services#fox-3") Hebergement
-                      li
-                        a(href="/services#fox-4") Etablissement de Visa
-                  li(class=(title==='A propos'?'active':''))
-                    a(href="/about") Qui somme nous
-                  li(class=(title==='Partenaires'?'active':''))
-                    a(href="/partner") Partenaires
-                  li(class=(title==='Contact'?'active':''))
-                    a(href="/contact") Contactez Nous
-      header#gtco-header.gtco-cover.gtco-cover-md(role="banner" style="background-image: url(images/Accra-Airport-City.jpg)" data-stellar-background-ratio="0.5")
-        .overlay
-        .gtco-container
-          .row.row-mt-15em
-            .col-md-12.mt-text.text-center.animate-box(data-animate-effect="fadeInUp")
-              h1
-                | Bienvenue a
-                strong Ghana Access.
-              h2
-                | Nous esperons que vous resterez dans les parages, que vous ferez une tournee et que vous nous contacterez bientot.
-      .flex-section.gtco-gray-bg
-        .col-1
-          .text
-            .row.row-pb-sm
-              .col-md-12
-                h2 Ghana Access
-                p
-                  | Ghana L'acc�s est l'endroit id�al si vous �tes impatient de faire un voyage au Ghana. Car nous fournissons, une salle de transition s�re entre votre pays (o� que vous soyez) et le Ghana. C'est l'occasion pour vous d'�largir vos questions sur ce pays et de prendre de bonnes pr�cautions avant d'atterrir sur les terres �trang�res. Nous Ghana Access offre une s�rie de services pour vous permettre d'avoir toutes les informations sur le Ghana, en faisant toutes les r�servations pour votre s�jour pour vous donner une exp�rience vraiment heureuse de ce pays qui est souvent le cas pour la plupart des visiteurs, en particulier ceux qui n'ont pas. amis, aucun parent, aucune relation professionnelle, ou aucun contact du tout.
-                p
-                  | Quelques probl�mes majeur que nous vous aidons � �viter:
-            .row
-              .col-md-6
-                ul.check-li
-                  li
-                    b Cout de vie
-                  li
-                    b Hebergement
-                  li
-                    b Xenophobie
-              .col-md-6
-                ul.check-li
-                  li
-                    b Ecoles accredite
-                  li
-                    b Transport
-                  li
-                    b Shopping
-        .col-2.flex-img(style="background-image: url(images/IMG_3066-1.jpg);")
-      .gtco-cover.gtco-cover-sm(style="background-image: url(images/inter.jpg)" data-stellar-background-ratio="0.5")
-        .overlay
-        .gtco-container.text-center
-          .display-t
-            .display-tc
-              h1.animate-box Quelque soit vos moyens, nous pouvons vous aider
-      .flex-section.reverse
-        .col-1
-          .text
-            .row.row-pb-sm
-              .col-md-12
-                h2 Objectifs de Ghana Access
-                p
-                  | Pour tout probl�me, il y a une solution. C'est dans le but de fournir des solutions � ces diff�rents probl�mes que nous, Ghana Access, nous sommes engag�s initialement � aider les r�sidents non-ghan�ens � satisfaire leurs diff�rents besoins sans avoir � se soucier de rien et � les �duquer sur la vie au Ghana. . Particuli�rement les �tudiants francophones au Ghana qui viennent tr�s souvent sans tuteurs pour les guider et les guider dans la conduite d'un bon s�jour au Ghana. Notre mission est de pouvoir combler votre manque en jouant le r�le de fr�re, de parents, voire d'ami que vous n'avez pas ici. Chez Ghana Access, notre priorit� est votre confort et nous nous engageons � prendre la famille l� o� vous le manquez le plus. Pour atteindre ces objectifs, nous avons mis en place des strat�gies pour vous offrir des services de qualit�.
-        .col-2.flex-img(style="background-image: url(images/IMG_3066-1.jpg);")
-      .gtco-cover.gtco-cover-sm(style="background-image: url(images/2014-07-02internationalpassports.gif)" data-stellar-background-ratio="0.5")
-        .overlay
-        .gtco-container.text-center
-          .display-t
-            .display-tc
-              h1.animate-box Nous vous faisons sentir comme chez vous
-      .overflow-hid
-        .gtco-section
-          .gtco-container
-            .row
-              .col-md-8.col-md-offset-2.text-center.gtco-heading
-                h2 Nos Services
-            .row(div="service-h2")
-              .col-lg-4.col-md-4.col-sm-6
-                a.gtco-card-item(href="services.html #fox-1")
-                  figure
-                    img.img-responsive(src="images/hero-international1.png" alt="Image")
-                  .gtco-text
-                    h2 Conseille et Orientation Scolaire
-                    p Nous vous conseillons les ecoles accrediter et ayant l'experience requise.
+            .row.row-mt-15em
+              .col-md-12.mt-text.text-center.animate-box(data-animate-effect='fadeInUp')
+                h1
+                  | Bienvenue à 
+                  strong Ghana Access.
+                h2
+                  | Nous espérons que vous resterai dans les parages, que vous ferai un tour et que vous nous contacterai bientôt.
+        .flex-section.gtco-gray-bg
+          .col-1
+            .text
+              .row.row-pb-sm
+                #redirected.col-md-12
+                  h2 Ghana Access
+                  p
+                    | Ghana Access est l’endroit ideal pour vos préparatifs de voyage sur le Ghana car nous fournissons une sale de transition sure entre votre pays (où que vous soyez) et le Ghana. Cest l’ocassion pour vous d’élargir  vos questions sur ce pays et de prendre de bonnes précautions avant d’attérir sur la terre étrangère. Nous, Ghana Access, offrons une série de 
+                    a(href='/form', style='') services
+                    |  permettant à nos clients d’obtenir toutes informations sur le Ghana afin de faciliter leurs préparatifs. La majorité de nos clients témoignent toujours de leurs  satifactions et expériences inoubliables ; choississant Ghana Access pour leurs services. En résumer, Ghana Access représente l’opportunité revé de toute personne n’ayant aucun ami, parents, relation professionnelle, ou contact au Ghana;  mais qui cependant nourir le désir de visiter ou de s’installer dans ce beau pays. 
+                    br
+                  p#pb
+                    | Quelques difficultés qu’un individu  pourrait rencontrer au Ghana, nécessittant une experience telle que la notre, pour les surmonter sont:
+              #pb.row
+                .col-md-6
+                  ul.check-li
+                    li
+                      b Cout de vie
+                    li
+                      b Hébergement
+                    li
+                      b Xénophobie
+                .col-md-6
+                  ul.check-li
+                    li
+                      b Ecoles non accrédité 
+                    li
+                      b Transport
+                    li
+                      b Dépenses inutile
+          .col-2.flex-img(style='background-image: url(images/IMG_3066-1.jpg);')
+        .gtco-cover.gtco-cover-sm(style='background-image: url(images/inter.jpg)', data-stellar-background-ratio='0.5')
+          .overlay
+          .gtco-container.text-center
+            .display-t
+              .display-tc
+                h1.animate-box Quelque soit vos moyens, nous pouvons vous aider
+        .flex-section.reverse
+          .col-1
+            .text
+              .row.row-pb-sm
+                .col-md-12
+                  h2 Objectifs de Ghana Access 
+                  p#redirectd
+                    | Comme nous le savons tous, pour tout problème, il y a forcément une solution! C’est dans le but de trouver solution aux difficultés mentionées 
+                    a(href='#pb')  plus haut 
+                    |  que nous, Ghana Access, nous sommes engagés à aider les ressortissants non-ghanéens (au Ghana) à subvenir à leurs différents besoins (sans qu'ils se soucient des difficultés impliquant ces derniers) et aussi les éduquer sur le code à suivre pour mieux vivre au Ghana. Plus particulièrement, ceci s’adresse, aux étudiants francophones au Ghana qui viennent très souvent sans tuteurs pour les orrienter et les encadrer dans la conduite à observer pour passer un bon séjour au Ghana. Notre mission est de combler votre manque en endossant les responsabilités (morales et meme financières)  du frère, du parent, ou meme de l’ami dont vous avez besoin ici. Nous nous sommes engagé à prendre la famille là où vous en manquez le plus car, avec Ghana Access, votre confort est notre priorité. Afin de pouvoir mener nos objectifs à bien, nous avons mis en place des stratégies pour l’aboutissement d’un service de qualité.
+          .col-2.flex-img(style='background-image: url(images/IMG_3066-1.jpg);')
+        .gtco-cover.gtco-cover-sm(style='background-image: url(images/2014-07-02internationalpassports.gif)', data-stellar-background-ratio='0.5')
+          .overlay
+          .gtco-container.text-center
+            .display-t
+              .display-tc
+                h1.animate-box Nous vous faisons sentir comme chez vous
+        .overflow-hid
+          .gtco-section
+            .gtco-container
+              .row
+                .col-md-8.col-md-offset-2.text-center.gtco-heading
+                  h2 Nos Services
+              .row(div='service-h2')
+                .col-lg-4.col-md-4.col-sm-6
+                  a.gtco-card-item(href='/services.html#fox-1')
+                    figure
+                      img.img-responsive(src='images/hero-international1.png', alt='Image')
+                    .gtco-text
+                      h2 Conseils et Orientations Scolaires
+                      p Nous vous  aidons a choisir les écoles accréditer et ayant l'expérience requise.
+                      p
+                        span.btn.btn-primary En savoir plus
+                .col-lg-4.col-md-4.col-sm-6
+                  a.gtco-card-item(href='/services.html#fox-2')
+                    figure
+                      img.img-responsive(src='images/Image1.png', alt='Image')
+                    .gtco-text
+                      h2 Traduction de Documents
+                      br
+                      p Nous vous aidons a traduire vos divers documents en anglais  
+                      p
+                        span.btn.btn-primary En savoir plus
+                .col-lg-4.col-md-4.col-sm-6
+                  a.gtco-card-item(href='/services.html#fox-3')
+                    figure
+                      img.img-responsive(src='images/54-.png', alt='Image')
+                    .gtco-text
+                      h2 Hébergement
+                      br
+                      p Nous vous aidons a trouver des residences selon vos moyens 
+                      p
+                        span.btn.btn-primary En savoir plus
+                .col-lg-4.col-md-4.col-sm-6
+                  a.gtco-card-item(href='/services.html#fox-4')
+                    figure
+                      img.img-responsive(src='images/Immigration2_hot.png', alt='Image')
+                    .gtco-text
+                      h2 Etablissement de Visa
+                      br
+                      p Nous vous aidons pour l'établissement de votre "Resident Permit"
+                      p
+                        span.btn.btn-primary En savoir plus
+                .col-lg-4.col-md-4.col-sm-6
+                  a.gtco-card-item(href='/services.html#fox-5')
+                    figure
+                      img.img-responsive(src='images/Terrace_003_R.jpg', alt='Image')
+                    .gtco-text
+                      h2 Réservation d'Hotel
+                      br
+                      p Nous vous faisont la réservation de l'hotel de votre choix contenu de vos moyen
+                      p
+                        span.btn.btn-primary En savoir plus
+                .col-lg-4.col-md-4.col-sm-6
+                  a.gtco-card-item(href='/services.html#fox-6')
+                    figure
+                      img.img-responsive(src='images/S0-insolite-.png', alt='Image')
+                    .gtco-text
+                      h2 Location de véhicules
+                      br
+                      p Nous vous aidons a réserver des véhicules pour vos déplacements
+                      p
+                        span.btn.btn-primary En savoir plus
+          #gtco-features
+            .gtco-container
+              .row
+                .col-md-8.col-md-offset-2.text-center.gtco-heading.animate-box
+                  h2 Comment nous procédons ?
+                  p
+              .row
+                .col-md-4.col-sm-6
+                  .feature-center.animate-box(data-animate-effect='fadeIn')
+                    span.icon
+                      i 1
+                    h3 Phase de Contact
                     p
-                      span.btn.btn-primary En savoir plus
-              .col-lg-4.col-md-4.col-sm-6
-                a.gtco-card-item(href="services.html #fox-2")
-                  figure
-                    img.img-responsive(src="images/Image1.png" alt="Image")
-                  .gtco-text
-                    h2 Traduction de Document
-                    p Nous vous aidons a traduire vos divers documents en anglais
+                      | La phase de contact consiste a vous fournir les informations dont vous avez besoin selon la raison de votre séjour, vous proposer les meilleurs options selon vos moyens.
+                .col-md-4.col-sm-6
+                  .feature-center.animate-box(data-animate-effect='fadeIn')
+                    span.icon
+                      i 2
+                    h3 Phase de Contrat
                     p
-                      span.btn.btn-primary En savoir plus
-              .col-lg-4.col-md-4.col-sm-6
-                a.gtco-card-item(href="services.html #fox-3")
-                  figure
-                    img.img-responsive(src="images/54-.png" alt="Image")
-                  .gtco-text
-                    h2 Hebergement
-                    p Nous vous aidons a trouver des residences selon vos moyens
+                      | La phase de contract consiste a l'établissement d'un contrat contenu des services auqu'elles vous avez s'ouscrit, a vous l'envoyer. Une fois a votre niveau vous prenez connaissance dudit contrat, vous l'imprimer, la signé, la scanner et vous la renvoyer.
+                .col-md-4.col-sm-6
+                  .feature-center.animate-box(data-animate-effect='fadeIn')
+                    span.icon
+                      i 3
+                    h3 Phase de Finalisation 
                     p
-                      span.btn.btn-primary En savoir plus
-              .col-lg-4.col-md-4.col-sm-6
-                a.gtco-card-item(href="services.html #fox-4")
-                  figure
-                    img.img-responsive(src="images/Immigration2_hot.png" alt="Image")
-                  .gtco-text
-                    h2 Etablissement de Visa
-                    p Nous vous aidons pour l'etablissement de votre "Resident Permit"
-                    p
-                      span.btn.btn-primary En savoir plus
-              .col-lg-4.col-md-4.col-sm-6
-                a.gtco-card-item(href="services.html #fox-5")
-                  figure
-                    img.img-responsive(src="images/Terrace_003_R.jpg" alt="Image")
-                  .gtco-text
-                    h2 Reservation d'Hotel
-                    p Nous vous faisont la reservation a l'hotel de votre choix contenu de vos moyen
-                    p
-                      span.btn.btn-primary En savoir plus
-              .col-lg-4.col-md-4.col-sm-6
-                a.gtco-card-item(href="services.html #fox-6")
-                  figure
-                    img.img-responsive(src="images/S0-insolite-.png" alt="Image")
-                  .gtco-text
-                    h2 Location de vehicules
-                    p Nous vous aidons a reserver des vehicules pour vos deplacements
-                    p
-                      span.btn.btn-primary En savoir plus
-        #gtco-features
+                      | La phase de Finalisation consiste a vous rendre les services auxquelles vous avez souscrit, et seulement une fois tous les services rendu vous paierai la totaliter du montant convenu sur le contrat.
+        .gtco-cover.gtco-cover-sm(style='background-image: url(images/accommodation.jpg)', data-stellar-background-ratio='0.5')
+          .overlay
+          .gtco-container.text-center
+            .display-t
+              .display-tc
+                h1
+                  | Ghana Access la réference quand il s'agit d'immigrer au 
+                  b GHANA
+                  | .
+        #gtco-counter.gtco-section
           .gtco-container
             .row
               .col-md-8.col-md-offset-2.text-center.gtco-heading.animate-box
-                h2 Comment nous procedons ?
+                h2 Statistique
                 p
             .row
-              .col-md-4.col-sm-6
-                .feature-center.animate-box(data-animate-effect="fadeIn")
-                  span.icon
-                    i 1
-                  h3 Phase de Contact
-                  p
-                    | La phase de contact consiste a vous fournir les informations dont vous avez besoin selon la raison de votre sejour, vous proposer les meilleurs options selon vos moyens.
-              .col-md-4.col-sm-6
-                .feature-center.animate-box(data-animate-effect="fadeIn")
-                  span.icon
-                    i 2
-                  h3 Phase de Contrat
-                  p
-                    | La phase de contract consiste a l'etablissement d'un contrat contenu des services auqu'elle vous avez s'ouscrit, a vous l'envoyer. Une fois a votre niveau vous prenez connaissance dudit contrat, vous l'imprimer, la signe, la scanner et vous la renvoyer.
-              .col-md-4.col-sm-6
-                .feature-center.animate-box(data-animate-effect="fadeIn")
-                  span.icon
-                    i 3
-                  h3 Phase de Finalisation
-                  p
-                    | La phase de Finalisation consiste a vous rendre le service auxquelle vous avez souscrit, et seulement une fois tous les services rendu vous paierai la totaliter du montant convenu sur le contrat
-      .gtco-cover.gtco-cover-sm(style="background-image: url(images/accommodation.jpg)" data-stellar-background-ratio="0.5")
-        .overlay
-        .gtco-container.text-center
-          .display-t
-            .display-tc
-              h1
-                | Ghana Access la reference quand il s'agit d'immigrer au
-                b GHANA
-                | .
-      #gtco-counter.gtco-section
-        .gtco-container
-          .row
-            .col-md-8.col-md-offset-2.text-center.gtco-heading.animate-box
-              h2 Statistique
-              p
-          .row
-            .col-md-3.col-sm-6.animate-box(data-animate-effect="fadeInUp")
-              .feature-center
-                span.counter.js-counter(data-from="0" data-to="102" data-speed="5000" data-refresh-interval="50") 1
-                span.counter-label Clients
-            .col-md-3.col-sm-6.animate-box(data-animate-effect="fadeInUp")
-              .feature-center
-                span.counter.js-counter(data-from="0" data-to="100" data-speed="5000" data-refresh-interval="50") 1
-                span.counter-label Clients satisfait
-            .col-md-3.col-sm-6.animate-box(data-animate-effect="fadeInUp")
-              .feature-center
-                span.counter.js-counter(data-from="0" data-to="02" data-speed="5000" data-refresh-interval="50") 1
-                span.counter-label Clients insatisfait
-            .col-md-3.col-sm-6.animate-box(data-animate-effect="fadeInUp")
-              .feature-center
-                span.counter.js-counter(data-from="0" data-to="18" data-speed="5000" data-refresh-interval="50") 1
-                span.counter-label Partenaires
-      footer
+              .col-md-3.col-sm-6.animate-box(data-animate-effect='fadeInUp')
+                .feature-center
+                  span.counter.js-counter(data-from='0', data-to='102', data-speed='5000', data-refresh-interval='50') 1
+                  span.counter-label Clients 
+              .col-md-3.col-sm-6.animate-box(data-animate-effect='fadeInUp')
+                .feature-center
+                  span.counter.js-counter(data-from='0', data-to='100', data-speed='5000', data-refresh-interval='50') 1
+                  span.counter-label Clients satisfait
+              .col-md-3.col-sm-6.animate-box(data-animate-effect='fadeInUp')
+                .feature-center
+                  span.counter.js-counter(data-from='0', data-to='02', data-speed='5000', data-refresh-interval='50') 1
+                  span.counter-label Clients insatisfait
+              .col-md-3.col-sm-6.animate-box(data-animate-effect='fadeInUp')
+                .feature-center
+                  span.counter.js-counter(data-from='0', data-to='18', data-speed='5000', data-refresh-interval='50') 1
+                  span.counter-label Partenaires
+        footer

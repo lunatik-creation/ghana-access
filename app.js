@@ -4,6 +4,7 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const nodemailer = require('nodemailer');
+const bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var about = require('./routes/about');
@@ -12,7 +13,7 @@ var partner = require('./routes/partner');
 var services = require('./routes/services');
 var form = require('./routes/form');
 
-var users = require('./routes/users');
+// var users = require('./routes/users');
 
 var enIndex = require('./routes/en-index');
 var enAbout = require('./routes/en-about');
@@ -28,8 +29,8 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
   extended: false
 }));
 
@@ -42,7 +43,7 @@ app.use('/contact', contact);
 app.use('/partner', partner);
 app.use('/services', services);
 app.use('/form', form);
-app.use('/users', users);
+// app.use('/users', users);
 app.use('/en/', index);
 app.use('/en/about', about);
 app.use('/en/contact', contact);

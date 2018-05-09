@@ -1,5 +1,175 @@
 extends layout
 
 block content
-  .container
-		h1 Form
+    .gtco-loader
+    #page
+      .page-inner
+        #head-top(style='position: absolute; width: 100%; top: 0; ')
+          .gtco-top
+            .container-fluid(style='background-color:#4D4D4D;')
+              .row
+                .col-md-6.col-xs-6
+                .col-md-6.col-xs-6.social-icons
+                  ul#lang.gtco-social-top
+                    li
+                      a(href='../form.php')
+                        i
+                          img(src='../images/France_30px.png', alt='')
+          nav#catch.gtco-nav.sticky-banner(role='navigation')
+            .gtco-container
+              #nav.row
+                .col-xs-12.text-center.menu-1
+                  span.go-back
+                    a(href='/')
+                      .logo
+                        img(src='../images/logo.png', alt='Ghana Access', width='100%', height='100%')
+                  ul
+                    li
+                      a(href='index.html') Home
+                    li.has-dropdown
+                      a(href='services.html') Services
+                      ul.dropdown
+                        li
+                          a(href='services.html#fox-1') Counseling and school guidance
+                        li
+                          a(href='services.html#fox-2') Traduction of Document
+                        li
+                          a(href='services.html#fox-3') Accomodation
+                        li
+                          a(href='services.html#fox-4') Visa establishment
+                    li
+                      a(href='about.html') About Us
+                    li
+                      a(href='partner.html') Partners
+                    li
+                      a(href='contact.php') Contact Us
+        header#gtco-header.gtco-cover.gtco-cover-sm(role='banner', style='background-image: url(../images/slider3.jpg)', data-stellar-background-ratio='0.5')
+          .overlay
+          .gtco-container
+            .row.row-mt-15em
+              .col-md-7.mt-text.text-left.animate-box(data-animate-effect='fadeInUp')
+                h1
+                  | Please fill
+                  strong  the form
+                h2 The best way to let us know what you want.
+        .gtco-section.gtco-gray-bg
+          center
+            b
+              h2 Ghana Access Form
+            br
+          br
+          form#form1(method='post', name='form1', action='')
+            fieldset
+              legend Personal Information 
+              .row.form-group
+                .col-md-12
+                  p
+                    input#textfield.form-control(name='Nom', type='text', required='', placeholder='Name')
+              p
+                input#textfield2.form-control(name='Prenoms', type='text', required='', placeholder='Surnames')
+              p
+                input#email.form-control(name='Email', type='email', required='', placeholder='Email')
+              p
+                select.form-control(name='Nationalite', required='')
+                  option Nationality
+                  option Benin
+                  option Burkina-Faso
+                  option Burundi
+                  option Cameroun
+                  option Cap-Vert
+                  option Centrafrique
+                  option Comores
+                  option Congo
+                  option C�te d'Ivoire
+                  option Djibouti
+                  option �gypte
+                  option France
+                  option Gabon
+                  option Guin�e
+                  option Guinee-Bissau
+                  option Guinee �quatoriale
+                  option Mali
+                  option Madagascar
+                  option Maroc
+                  option Maurice (�le)
+                  option Mauritanie
+                  option Niger
+                  option Nigeria
+                  option Quatar
+                  option Rwanda
+                  option Sao Tome and Principe
+                  option Senegal
+                  option Seychelles
+                  option Tchad
+                  option Togo
+                  option Tunisia
+                  option Other
+              p
+                input#textfield5.form-control(type='text', name='Profession', placeholder='Profession')
+              p
+                input#textfield6.form-control(type='text', name='Niveau', placeholder='School Level')
+              p
+                input#tel.form-control(name='Telephone', type='tel', required='', placeholder='Telephone')
+              p
+                input#date.form-control(name='Date', type='text', required='', placeholder='Date of birth')
+              p.form-control(<select='', name='Sexe', required='')
+                option Sex
+                option M
+                option F
+                option Other
+              p
+                select.form-control(name='Sejour', required='')
+                  option Lenght of stay
+                  option 1 - 30 days
+                  option 1 - 3 months
+                  option 3 - 6 months
+                  option 6 - 12 months
+                  option 1 - 4 years
+                  option Unknown
+              p
+                | Services:
+                | School admission
+                input(type='hidden', name='Inscription_Scolaire', value='on')
+                input#checkbox5(name='Inscription_Scolaire', type='checkbox', checked='')
+                | 	  Accomodation
+                input(type='hidden', name='Hebergement', value='off')
+                input#checkbox(type='checkbox', name='Hebergement')
+                | 	    Traduction documents
+                input(type='hidden', name='Traduction_document', value='off')
+                input#checkbox2(type='checkbox', name='Traduction_documents')
+                | 	   Visa  establishement
+                input(type='hidden', name='Etablissement_Visa', value='off')
+                input#checkbox3(type='checkbox', name='Etablissement_Visa')
+                | 	    Vehicule rental
+                input(type='hidden', name='Location_de_vehicule', value='off')
+                input#checkbox4(type='checkbox', name='Location_de_vehicule')
+                | 	    Hotel booking
+                input(type='hidden', name='Reservation_hotel', value='off')
+                input#checkbox6(type='checkbox', name='Reservation_hotel')
+              p
+                | Photo:
+                input#fileField(name='Photo', type='file', required='')
+              p
+                textarea#textarea.form-control(name='Commentaire', placeholder='Commentaire')
+              p
+            br
+            fieldset
+              legend Sponspor Information 
+              p
+                input#textfield3.form-control(name='Parain-Nom', type='text', required='', placeholder='Name')
+              p
+                input#textfield4.form-control(name='Parain-Prenoms', type='text', required='', placeholder='Surnames')
+              p
+                input#tel2.form-control(name='Parain-Telephone', type='tel', required='', placeholder='Telephone')
+              p
+                input#email2.form-control(type='email ', name='Parain-Email', placeholder='Email (optional)')
+            p
+              input#submit.btn.btn-primary(type='submit', name='submit-form', value='Envoyer')
+      .gtco-cover.gtco-cover-sm(style='background-image: url(../images/frfr.jpg)', data-stellar-background-ratio='0.5')
+        .overlay
+        .gtco-container.text-center
+          .display-t
+            .display-tc
+              h1
+                | We are what you define the best
+      footer
